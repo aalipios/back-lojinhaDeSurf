@@ -6,6 +6,7 @@ namespace back.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+
     public class ProductsController : ControllerBase
     {
         private readonly IProductRepository repository;
@@ -15,6 +16,7 @@ namespace back.Controllers
             this.repository = repository;
         }
         [HttpGet]
+
         public async Task<IActionResult> Get()
         {
             return Ok(await repository.BuscaProdutos());
@@ -53,7 +55,7 @@ namespace back.Controllers
             repository.DeletaProduto(produto);
 
             return await repository.SaveChangesAsync()
-            ? Ok("Usuário deletado")
+            ? Ok("Produto deletado")
             : BadRequest("Erro");
         }
     }

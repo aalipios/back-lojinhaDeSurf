@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IProductRepository, ProdutoRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
+
 builder.Services.AddDbContext<UsuarioContext>(option =>
     option.UseSqlite(builder.Configuration.GetConnectionString("WebApiDatabase")));
 
@@ -20,6 +21,9 @@ builder.Services.AddDbContext<ProductContext>(option =>
     option.UseSqlite(builder.Configuration.GetConnectionString("WebApiDatabase")));    
 var app = builder.Build();
 
+#region [Cors]
+builder.Services.AddCors();
+#endregion
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -30,8 +34,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+#region [Cors]
+    app.UseCors(c =>
+    {
+        c.AllowAnyHeader();
+        c.AllowAnyMethod();
+        c.AllowAnyOrigin();
+    });
+#endregion
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers(); 
 
 app.Run();

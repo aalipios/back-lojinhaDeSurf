@@ -6,5 +6,6 @@ namespace back.models
         public string? name { get; set; }
         public double preco { get; set; }
         public string? url { get; set; }
+        public int tipo { get; set; }
     }
 }
