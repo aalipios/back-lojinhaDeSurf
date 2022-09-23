@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\10189517417\\Documents\\Atividades\\loja\\back\\back.csproj": {}
+    "C:\\Users\\abraa\\OneDrive\\Área de Trabalho\\Residência\\Projetos\\back-lojinhaDeSurf\\back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\10189517417\\Documents\\Atividades\\loja\\back\\back.csproj": {
+    "C:\\Users\\abraa\\OneDrive\\Área de Trabalho\\Residência\\Projetos\\back-lojinhaDeSurf\\back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\10189517417\\Documents\\Atividades\\loja\\back\\back.csproj",
+        "projectUniqueName": "C:\\Users\\abraa\\OneDrive\\Área de Trabalho\\Residência\\Projetos\\back-lojinhaDeSurf\\back.csproj",
         "projectName": "back",
-        "projectPath": "C:\\Users\\10189517417\\Documents\\Atividades\\loja\\back\\back.csproj",
-        "packagesPath": "C:\\Users\\10189517417\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\10189517417\\Documents\\Atividades\\loja\\back\\obj\\",
+        "projectPath": "C:\\Users\\abraa\\OneDrive\\Área de Trabalho\\Residência\\Projetos\\back-lojinhaDeSurf\\back.csproj",
+        "packagesPath": "C:\\Users\\abraa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abraa\\OneDrive\\Área de Trabalho\\Residência\\Projetos\\back-lojinhaDeSurf\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\10189517417\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\abraa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
